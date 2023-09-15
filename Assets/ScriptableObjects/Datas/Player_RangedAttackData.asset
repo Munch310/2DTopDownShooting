@@ -22,9 +22,9 @@ MonoBehaviour:
   isOnKnockback: 1
   konkbackPower: 5
   konkbackTime: 0.1
-  bulletANameTag: Arrow
+  bulletNameTag: Arrow
   duration: 5
   spread: 4
-  numberofProjectilesPerShot: 1
+  numberofProjectilesPerShot: 2
   multipleProjectilesAngle: 7
   projectileColor: {r: 1, g: 1, b: 1, a: 1}
