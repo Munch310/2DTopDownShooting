@@ -10,10 +10,10 @@ public class AttackSO : ScriptableObject
     public float delay;
     public float power;
     public float speed;
-    public LayerMask tartget;
+    public LayerMask target;
 
     [Header("Knock Back Info")]
     public bool isOnKnockback;
-    public float konkbackPower;
-    public float konkbackTime;
+    public float knockbackPower;
+    public float knockbackTime;
 }

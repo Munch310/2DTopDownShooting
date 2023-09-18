@@ -16,12 +16,12 @@ MonoBehaviour:
   delay: 0.15
   power: 2
   speed: 10
-  tartget:
+  target:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   isOnKnockback: 1
-  konkbackPower: 5
-  konkbackTime: 0.1
+  knockbackPower: 5
+  knockbackTime: 0.1
   bulletNameTag: Arrow
   duration: 5
   spread: 4

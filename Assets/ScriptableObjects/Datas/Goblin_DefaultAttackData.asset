@@ -16,9 +16,9 @@ MonoBehaviour:
   delay: 0.15
   power: 1
   speed: 5
-  tartget:
+  target:
     serializedVersion: 2
     m_Bits: 256
   isOnKnockback: 0
-  konkbackPower: 0
-  konkbackTime: 0
+  knockbackPower: 0
+  knockbackTime: 0
