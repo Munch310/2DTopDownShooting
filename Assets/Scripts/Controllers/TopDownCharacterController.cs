@@ -25,18 +25,18 @@ public class TopDownCharacterController : MonoBehaviour
 
     private void HandleAttackDelay()
     {
-        if (Stats.CurrentStats.attakSO == null)
+        if (Stats.CurrentStats.attackSO == null)
             return;
 
 
-        if (_timeSinceLastAttack <= Stats.CurrentStats.attakSO.delay)
+        if (_timeSinceLastAttack <= Stats.CurrentStats.attackSO.delay)
         {
             _timeSinceLastAttack += Time.deltaTime;
         }
-        if (IsAttacking && _timeSinceLastAttack > Stats.CurrentStats.attakSO.delay)
+        if (IsAttacking && _timeSinceLastAttack > Stats.CurrentStats.attackSO.delay)
         {
             _timeSinceLastAttack = 0;
-            CallAttackEvent(Stats.CurrentStats.attakSO); //TopDownShooting으로 넘어감.
+            CallAttackEvent(Stats.CurrentStats.attackSO); //TopDownShooting으로 넘어감.
         }
     }
 

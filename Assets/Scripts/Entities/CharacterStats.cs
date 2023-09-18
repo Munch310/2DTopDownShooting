@@ -19,6 +19,6 @@ public class CharacterStats
     [Range(1f, 20f)] public float speed;
 
     // 공격 데이터 스크립터블 오브젝트
-    public AttackSO attakSO;
+    public AttackSO attackSO;
 }
 
