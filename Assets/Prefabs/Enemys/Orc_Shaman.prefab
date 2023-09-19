@@ -282,7 +282,7 @@ MonoBehaviour:
     statsChangeType: 2
     maxHealth: 3
     speed: 2
-    attakSO: {fileID: 11400000, guid: 739fe3f3330d0264792df618f4169641, type: 2}
+    attackSO: {fileID: 11400000, guid: 739fe3f3330d0264792df618f4169641, type: 2}
   statsModifiers: []
 --- !u!114 &5319230304283086402
 MonoBehaviour:
@@ -338,6 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 6499048376048896095}
+  shootingClip: {fileID: 8300000, guid: 6e8772b49f34d402a90016ed445d8a2f, type: 3}
 --- !u!114 &4589648503907599133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,6 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
+  damageClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
 --- !u!114 &553702030799805460
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -235,7 +235,7 @@ MonoBehaviour:
     statsChangeType: 2
     maxHealth: 3
     speed: 2
-    attakSO: {fileID: 11400000, guid: 488f1fedd93503540aa92e8309ee0479, type: 2}
+    attackSO: {fileID: 11400000, guid: 488f1fedd93503540aa92e8309ee0479, type: 2}
   statsModifiers: []
 --- !u!114 &2805889579353690339
 MonoBehaviour:
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
-  damageClip: {fileID: 0}
+  damageClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
 --- !u!114 &1476393626058527806
 MonoBehaviour:
   m_ObjectHideFlags: 0

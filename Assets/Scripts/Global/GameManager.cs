@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Transform spawnPositionsRoot;
     private List<Transform> spawnPositions = new List<Transform>();
+
+    public List<GameObject> rewards = new List<GameObject>();
            
     private void Awake()
     {
@@ -67,12 +69,13 @@ public class GameManager : MonoBehaviour
                     waveSpawnCount = 0;
                 }
 
-                if(currentWaveIndex % 5 == 0)
+                if (currentWaveIndex % 5 == 0)
                 {
-
+                    CreateReward();
                 }
 
-                if(currentWaveIndex % 3 == 0) // 3의 배수라면, 스폰을 늘림
+
+                if (currentWaveIndex % 3 == 0) // 3의 배수라면, 스폰을 늘림
                 {
                     waveSpawnCount += 1;
                 }
@@ -127,5 +130,14 @@ public class GameManager : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    void CreateReward()
+    {
+        int idx = Random.Range(0, rewards.Count);
+        int posIdx = Random.Range(0, spawnPositions.Count);
+
+        GameObject obj = rewards[idx];
+        Instantiate(obj, spawnPositions[posIdx].position, Quaternion.identity);
     }
 }
